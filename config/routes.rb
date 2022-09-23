@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'statik_pages/home'
+  root 'statik_pages#home'
   get 'statik_pages/help'
   get 'statik_pages/about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
