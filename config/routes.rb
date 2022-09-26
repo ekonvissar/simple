@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'statik_pages#home'
+  get 'statik_pages/home'
   get 'statik_pages/help'
   get 'statik_pages/about'
   get 'statik_pages/home'
