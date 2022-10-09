@@ -18,4 +18,10 @@ class StatikPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "About | RoR Sample App"
   end
+
+  test "should get contacts" do
+    get statik_pages_contacts_url
+    assert_response :success
+    assert_select "title", "Contacts | RoR Sample App"
+  end
 end
