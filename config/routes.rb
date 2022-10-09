@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'users/new'
   root 'statik_pages#home'
-  get 'home' => 'statik_pages#home'
   get 'help' => 'statik_pages#help'
   get 'about' => 'statik_pages#about'
   get 'contacts' => 'statik_pages#contacts'
