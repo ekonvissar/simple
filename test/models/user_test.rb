@@ -51,5 +51,11 @@ class UserTest < ActiveSupport::TestCase
    duplcate_user.email = @user.email.upcase
    @user.save
    assert_not duplcate_user.valid?
- end
+  end
+
+  test "password should have a minimum length" do
+    @user_password = @user.password_confirmation = "a" * 5
+    assert_not @user.valid?
+  end
+
 end
