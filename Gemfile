@@ -30,6 +30,8 @@ gem "jbuilder"
 gem 'bootstrap-sass'
 
 gem 'rails-controller-testing'
+gem 'minitest'
+gem 'bcrypt'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
